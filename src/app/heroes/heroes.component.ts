@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
-import { HeroService } from "../HeroService";
+import { HeroService } from '../hero.service';
 
 
 @Component({
@@ -14,15 +14,15 @@ export class HeroesComponent implements OnInit {
     name: 'Windstorm'
   };*/
 
-  public selectedHero: Hero;
+  selectedHero: Hero;
 
-  public heroes: Hero[];
+  heroes: Hero[];
   /*heroes = HEROES;*/
   
-  public onSelect(hero: Hero): void {
+  onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
-  private getHeroes(): void {
+  getHeroes(): void {
     this.heroService.getHeroes()
       .subscribe((heroes: Hero[]) => this.heroes = heroes);
 }

@@ -19,6 +19,13 @@ import { InMemoryDataService } from './in-memory-data.service';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
+    //HttpClientModule,
+    
+  ],
+  imports: [ 
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
@@ -26,12 +33,6 @@ import { InMemoryDataService } from './in-memory-data.service';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
       )
-  ],
-  imports: [ 
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

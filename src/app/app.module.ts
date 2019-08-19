@@ -27,7 +27,7 @@ import { InMemoryDataService } from './in-memory-data.service';
       InMemoryDataService, { dataEncapsulation: false }
       )
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     AppRoutingModule,
     FormsModule,

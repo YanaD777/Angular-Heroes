@@ -1,12 +1,17 @@
 /* AppComponent's private CSS styles */
+body {
+  background-color: #f0f1f5;
+}
 h1 {
   font-size: 1.2em;
   margin-bottom: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
   font-size: 2em;
   margin-top: 0;
   padding-top: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 nav a {
   padding: 5px 10px;
@@ -20,9 +25,9 @@ nav a:visited, a:link {
   color: #334953;
 }
 nav a:hover {
-  color: #039be5;
+  color: #0DB73F;
   background-color: #cfd8dc;
 }
 nav a.active {
-  color: #039be5;
+  color: #0DB24C;
 }

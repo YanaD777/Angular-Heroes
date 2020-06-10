@@ -12,18 +12,20 @@ h4.search-box{
     background-color: white;
     cursor: pointer;
     list-style-type: none;
+    transition: .3s all ease-in-out;
   }
-  
+
   .search-result li:hover {
     background-color: #607D8B;
   }
-  
+
   .search-result li a {
     color: #888;
     display: block;
     text-decoration: none;
+    transition: .3s all ease-in-out;
   }
-  
+
   .search-result li a:hover {
     color: white;
   }
@@ -34,8 +36,8 @@ h4.search-box{
     width: 200px;
     height: 20px;
   }
-  
-  
+
+
   ul.search-result {
     margin-top: 0;
     padding-left: 0;

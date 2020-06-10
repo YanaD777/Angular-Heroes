@@ -20,6 +20,7 @@ label {
     border-radius: 4px;
     cursor: pointer;
     cursor: hand;
+    transition: .3s all ease-in-out;
   }
   button:hover {
     background-color: #cfd8dc;
